@@ -20,7 +20,7 @@ Fazer o build da imagem com os seguintes comandos:
 
 docker build -t twitter-api .
 
-docker tag twitter-api:latest 208329978497.dkr.ecr.us-east-1.amazonaws.com/twitter-api:latest
+docker tag twitter-api:latest account-id.dkr.ecr.us-east-1.amazonaws.com/twitter-api:latest
 
 Executar os comandos abaixo para provisionar a infraestrutura:
 
@@ -35,3 +35,7 @@ As informações serão inseridas no dynamodb, porém não terminado. Deste modo
 Na aba monitoring é possível ver métricas de sucesso e erros de execução.
 
 Os logs são enviados para o cloudwatch logs.
+
+Para terminar a infraestrutura executar o camando abaixo:
+
+terraform destroy
